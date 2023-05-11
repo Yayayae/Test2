@@ -18,7 +18,7 @@ type
     procedure button4_Click(sender: Object; e: EventArgs);
     procedure button1_Click(sender: Object; e: EventArgs);
   {$region FormDesigner}
-  internal
+  internal // комментарий 
     {$resource Unit1.Form1.resources}
     panel1: Panel;
     button1: Button;
