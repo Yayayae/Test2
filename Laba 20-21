@@ -1,0 +1,17 @@
+var
+  n,i,x0,k: integer;
+  sum: longint;
+begin
+  repeat
+    write('Введите число n (1<=n<=4): ');
+    readln(n);
+  until n in[1..4];
+  x0:=1;
+  for i:=1 to n-1 do
+    x0:=x0*10;
+  write('Введите число k: ');
+  readln(k);
+  for i:=x0 to x0*10-1 do
+    if i mod k=0 then sum:=sum+i;
+  writeln('Сумма чисел от ',x0,' до ',x0*10-1,' кратных ',k,' = ',sum);
+end.
